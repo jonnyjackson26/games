@@ -1,0 +1,39 @@
+.tictactoe {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+    width: 320px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+    border: 2px solid #000;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+#whosTurn {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.winning-box {
+    background: #90ee90;
+}
