@@ -1,0 +1,43 @@
+.game-of-life {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.conways-controls {
+    margin: 20px;
+}
+
+.conways-controls button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.conways-controls button:hover {
+    background-color: #0088cc;
+}
+
+.conways-grid {
+    display: inline-block;
+    border: 1px solid #000;
+}
+
+.conways-row {
+    display: flex;
+}
+
+.conways-cell {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.conways-cell.alive {
+    background-color: #000;
+}
