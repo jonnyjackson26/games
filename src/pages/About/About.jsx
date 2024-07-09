@@ -11,6 +11,8 @@ const About = () => {
 
             <Link to='/'>Back Home</Link>
 
+            <p>Im Jonny Jackson. I made all these games. Theyre free. contact me jrsjackson26@gmail.com</p>
+
         </>
     );
 };

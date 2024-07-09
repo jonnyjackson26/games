@@ -1,8 +1,10 @@
-# React + Vite
+when you add a new game, 
+1. import it to main.jsx
+2. add it to componentMap in main.jsx
+3. add it to gamesInfo in gamesInfo.js
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+TODO:
+* differnt language support
+* back home button component
+* dark/light/retro themes
+* add tags to games (classic,singleplayer,multiplayer,card,luck,strategy)

@@ -1,11 +1,3 @@
-/*
-when you add a new game, 
-1. import it
-2. add it to componentMap 
-3. add it to gamesInfo in gamesInfo.js
-*/
-
-
 import React, { useState, useEffect, useContext } from 'react';
 import ReactDOM from 'react-dom/client'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
