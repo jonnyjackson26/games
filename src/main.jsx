@@ -10,6 +10,7 @@ import Snake from './pages/Snake/Snake';
 import Connect4 from './pages/Connect4/Connect4';
 import ConwaysGameOfLife from './pages/ConwaysGameOfLife/ConwaysGameOfLife'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
+import Sudoku from './pages/Sudoku/Sudoku';
 
 const router = createHashRouter([
   {
@@ -47,6 +48,10 @@ const router = createHashRouter([
   {
     path: "/2048",
     element: <TwentyFourtyEight />,
+  },
+  {
+    path: "/sudoku",
+    element: <Sudoku />,
   },
 ])
 

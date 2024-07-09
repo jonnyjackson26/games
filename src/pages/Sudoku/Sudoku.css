@@ -1,0 +1,49 @@
+.sudoku {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.sudoku-board {
+    display: grid;
+    grid-template-columns: repeat(9, auto);
+    gap: 1px;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 360px;
+    background-color: #000;
+    border: 2px solid #000;
+}
+
+.sudoku-row {
+    display: contents;
+    /* Use display contents to maintain grid structure */
+}
+
+.sudoku-cell {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
+
+p {
+    font-size: 18px;
+    color: green;
+}
