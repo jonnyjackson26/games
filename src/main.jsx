@@ -11,6 +11,7 @@ import Connect4 from './pages/Connect4/Connect4';
 import ConwaysGameOfLife from './pages/ConwaysGameOfLife/ConwaysGameOfLife'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Sudoku from './pages/Sudoku/Sudoku';
+import Minesweeper from './pages/Minesweeper/Minesweeper';
 
 const router = createHashRouter([
   {
@@ -52,6 +53,10 @@ const router = createHashRouter([
   {
     path: "/sudoku",
     element: <Sudoku />,
+  },
+  {
+    path: "/minesweeper",
+    element: <Minesweeper />,
   },
 ])
 

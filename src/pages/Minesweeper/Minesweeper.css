@@ -1,0 +1,68 @@
+.minesweeper-game {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.back-home {
+    display: block;
+    margin: 20px 0;
+}
+
+.minesweeper-board {
+    display: inline-block;
+    border: 2px solid #000;
+    background-color: #ddd;
+    margin-top: 20px;
+}
+
+.minesweeper-row {
+    display: flex;
+}
+
+.minesweeper-cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #bbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #eee;
+    user-select: none;
+}
+
+.minesweeper-cell.revealed {
+    background-color: #ccc;
+    cursor: default;
+}
+
+.minesweeper-cell.flagged::after {
+    content: '🚩';
+}
+
+.game-status {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.game-status.victory {
+    color: green;
+}
+
+.game-status.defeat {
+    color: red;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0088cc;
+}
