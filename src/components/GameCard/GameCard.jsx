@@ -2,16 +2,19 @@ import React from 'react';
 import './GameCard.css'
 import { Link } from 'react-router-dom';
 
-const GameCard = ({ name, to }) => {
+const GameCard = ({ game }) => {
 
 
     return (
         <>
-            <Link to={to} className='gameCard-link'>
-                <div className='gameCard'>
-                    <h3>{name}</h3>
-                </div>
-            </Link>
+
+            <div className='gameCard'>
+                <Link to={game.url} className='gameCard-link'>
+                    <h3>{game.name}</h3>
+                    <img src={'public/games/' + game.photo} alt="" />
+                </Link>
+            </div>
+
         </>
     );
 };

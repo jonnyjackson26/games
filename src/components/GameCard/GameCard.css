@@ -1,0 +1,35 @@
+.gameCard-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.gameCard {
+    border: 2px solid #000;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gameCard:hover {
+    transform: scale(1.05);
+}
+
+.gameCard h3 {
+    font-size: 1.2em;
+    font-family: 'Arial, sans-serif';
+    color: #333;
+    padding: 10px 0;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.gameCard img {
+    width: 100%;
+    height: auto;
+    display: block;
+}

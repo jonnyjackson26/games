@@ -1,8 +1,8 @@
 /*
 when you add a new game, 
 1. import it
-2. add it to gamesInfo
-3. add it to componentMap
+2. add it to componentMap 
+3. add it to gamesInfo in gamesInfo.js
 */
 
 
@@ -21,64 +21,6 @@ import ConwaysGameOfLife from './pages/ConwaysGameOfLife/ConwaysGameOfLife'
 import Sudoku from './pages/Sudoku/Sudoku';
 import Minesweeper from './pages/Minesweeper/Minesweeper';
 
-
-const gamesInfo = [
-  {
-    name: "Tic Tac Toe",
-    componentName: "TicTacToe",
-    photo: "TicTacToe.png",
-    url: "/tic-tac-toe"
-  },
-  {
-    name: "Ultimate Tic Tac Toe",
-    componentName: "UltimateTicTacToe",
-    photo: "UltimateTicTacToe.png",
-    url: "/ultimate-tic-tac-toe"
-  },
-  {
-    name: "Memory Game",
-    componentName: "MemoryGame",
-    photo: "MemoryGame.png",
-    url: "/memory-game"
-  },
-  {
-    name: "Conways Game of Life",
-    componentName: "ConwaysGameOfLife",
-    photo: "ConwaysGameOfLife.gif",
-    url: "/conways-game-of-life"
-  },
-  {
-    name: "Connect 4",
-    componentName: "Connect4",
-    photo: "Connect4.jpg",
-    url: "/connect-4"
-  },
-  {
-    name: "Minesweeper",
-    componentName: "Minesweeper",
-    photo: "Minesweeper.png",
-    url: "/minesweeper"
-  },
-  {
-    name: "Sudoku",
-    componentName: "Sudoku",
-    photo: "Sudoku.png",
-    url: "/sudoku"
-  },
-  {
-    name: "2048",
-    componentName: "TwentyFourtyEight",
-    photo: "TwentyFourtyEight.gif",
-    url: "/2048"
-  },
-  {
-    name: "Snake",
-    componentName: "Snake",
-    photo: "Snake.jpg",
-    url: "/snake"
-  }
-];
-
 const componentMap = {
   TicTacToe,
   UltimateTicTacToe,
@@ -91,7 +33,7 @@ const componentMap = {
   Snake
 };
 
-
+import gamesInfo from './gamesInfo';
 const gameRoutes = gamesInfo.map(game => ({
   path: game.url,
   element: React.createElement(componentMap[game.componentName])
