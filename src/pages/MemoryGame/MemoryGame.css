@@ -1,0 +1,31 @@
+.memory-game {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+    grid-gap: 5px;
+    margin: 0 auto;
+}
+
+.boxClass {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.winning-box {
+    background-color: green;
+}
+
+.boxText {
+    color: white;
+}
