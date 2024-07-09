@@ -5,6 +5,10 @@ import About from './pages/About/About'
 import UltimateTicTacToe from './pages/UltimateTicTacToe/UltimateTicTacToe';
 import MemoryGame from './pages/MemoryGame/MemoryGame';
 import TicTacToe from './pages/TicTacToe/TicTacToe';
+import TwentyFourtyEight from './pages/2048/TwentyFourtyEight';
+import Snake from './pages/Snake/Snake';
+import Connect4 from './pages/Connect4/Connect4';
+import ConwaysGameOfLife from './pages/ConwaysGameOfLife/ConwaysGameOfLife'
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
 const router = createHashRouter([
@@ -27,6 +31,22 @@ const router = createHashRouter([
   {
     path: "/memory-game",
     element: <MemoryGame />,
+  },
+  {
+    path: "/snake",
+    element: <Snake />,
+  },
+  {
+    path: "/conways-game-of-life",
+    element: <ConwaysGameOfLife />,
+  },
+  {
+    path: "/connect-4",
+    element: <Connect4 />,
+  },
+  {
+    path: "/2048",
+    element: <TwentyFourtyEight />,
   },
 ])
 

@@ -14,12 +14,12 @@ const Home = () => {
             <GameCard name="Tic Tac Toe" to="/tic-tac-toe" />
             <GameCard name="Ultimate Tic Tac Toe" to="/ultimate-tic-tac-toe" />
             <GameCard name="Memory Game" to="/memory-game" />
-            <GameCard name="Conways Game of Life" to="/memory-game" />
-            <GameCard name="Connect 4" to="/memory-game" />
-            <GameCard name="Minesweeper" to="/memory-game" />
-            <GameCard name="Sudoku" to="/memory-game" />
-            <GameCard name="2048" to="/memory-game" />
-            <GameCard name="Snake" to="/memory-game" />
+            <GameCard name="Conways Game of Life" to="/conways-game-of-life" />
+            <GameCard name="Connect 4" to="/connect-4" />
+            <GameCard name="Minesweeper" to="/minesweeper" />
+            <GameCard name="Sudoku" to="/sudoku" />
+            <GameCard name="2048" to="/2048" />
+            <GameCard name="Snake" to="/snake" />
         </>
     );
 };
